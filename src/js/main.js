@@ -1,7 +1,7 @@
 let toggle = document.getElementById("toggle");
 
-if (localStorage.theme === "dark") {
-    document.documentElement.classList.add("dark");
+if (localStorage.theme === "light") {
+    document.documentElement.classList.remove("dark");
 }
 
 toggle.addEventListener("click", () => {

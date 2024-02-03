@@ -24,13 +24,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/social-media-dashboard-with-tadilwindcss-and-vanilla-javascript-HUml2xVrW3)
+- Live Site URL: (https://yousefadel777.github.io/Social-media-dashboard/)
 
 ## My process
 
 ### Built with
-
 
 - Semantic HTML5 markup
 - CSS custom properties
