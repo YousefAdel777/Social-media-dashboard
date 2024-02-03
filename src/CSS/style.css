@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border;
+    }
+    body {
+        @apply font-inter;
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto px-[15px] md:w-[750px] lg:w-[970px] xl:w-[1145px]
+    }
+    .big-card {
+        @apply bg-gray-blue-200 pt-7 pb-6 text-center rounded-md hover:bg-gray-blue-300 dark:bg-desaturated-blue-800 dark:hover:bg-blue-700 cursor-pointer duration-300 border-t-4;
+    }
+    .big-card .social-media {
+        @apply flex items-center justify-center text-xs min-h-6 font-semibold text-gray-blue-600 dark:text-desaturated-blue-600 gap-2 mb-6;
+    }
+    .big-card > span {
+        @apply text-6xl text-blue-800 font-bold tracking-tighter leading-none mb-1 block dark:text-white;
+    }
+    .followers {
+        @apply text-gray-blue-600 dark:text-desaturated-blue-600 text-xs tracking-widest uppercase mb-6;
+    }
+    .today {
+        @apply flex items-center justify-center gap-1 font-bold text-xs;
+    }
+    .gain {
+        @apply text-green-500;
+    }
+    .gain img {
+        @apply mb-[0.15rem];
+    }
+    .decrease {
+        @apply text-red-600;
+    }
+    .instagram {
+        border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+    }
+    .card {
+        @apply pt-6 pb-6 pl-6 pr-8 bg-gray-blue-200 rounded-md dark:bg-desaturated-blue-800 dark:hover:bg-blue-700 hover:bg-gray-blue-300 duration-300 cursor-pointer;
+    }
+    .media,
+    .percent {
+        @apply flex items-center justify-between;
+    }
+    .count {
+        @apply flex items-end justify-between;
+    }
+    .media {
+        @apply mb-[1.6rem] min-h-6;
+    }
+    .count-val {
+        @apply text-[2rem] text-blue-800 font-bold leading-none dark:text-white;
+    }
+    .media h3 {
+        @apply text-sm text-gray-blue-600 font-semibold dark:text-desaturated-blue-600;
+    }
+    .percent {
+        @apply font-bold text-xs gap-[0.125rem];
+    }
+    .percent img {
+        @apply mb-0;
+    }
+}
+
+@layer utilities {
+    .min-h-6 {
+        min-height: 1.25rem;
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+  <link rel="stylesheet" href="./src/CSS/Normalize.css">
+  <link rel="stylesheet" href="./src/CSS/output.css">
+</head>
+<body class="dark:bg-blue-800 relative after:absolute after:content-[''] after:top-0 after:left-2/4 after:bg-blue-200 after:-z-10 after:w-full after:min-h-[40svh] md:after:min-h-[27.8svh] after:-translate-x-2/4 after:rounded-b-4xl dark:after:bg-blue-900">
+  <header class="mb-1">
+    <div class="container flex flex-col justify-between items-center py-10 md:flex-row">
+      <div class="text pb-6 border-b-2 border-gray-blue-600 md:border-none md:p-0">
+        <h1 class="mb-1 leading-none text-3xl font-bold text-blue-800 dark:text-white">Social Media Dashboard</h1>
+        <p class="text-sm font-semibold text-gray-blue-600 dark:text-desaturated-blue-600">Total Followers: <span>23,004</span></p>
+      </div>
+      <div class="dark-mode flex justify-between items-center gap-3 mb-2 mr-1 cursor-pointer w-full p-2 pt-6 md:justify-center md:w-fit md:p-0">
+        <p class="text-sm text-gray-blue-600 font-semibold dark:text-desaturated-blue-600">Dark Mode</p>
+        <div id="toggle" class="toggle relative w-12 h-6 rounded-xl bg-dark-toggle dark:bg-gradient-to-r dark:from-light-toggle-from dark:to-light-toggle-to hover:bg-gradient-to-r hover:from-light-toggle-from hover:to-light-toggle-to duration-300">
+          <span class="bg-gray-blue-200 dark:bg-blue-800 rounded-full absolute h-[1.125rem] w-[1.125rem] right-[3px] top-2/4 -translate-y-2/4 dark:left-[3px]"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cards mb-[2.75rem]">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1.875rem]">
+      <div class="big-card border-facebook">
+        <div class="social-media">
+          <img src="./images/icon-facebook.svg" alt="Facebook logo">
+          <p>@nathanf</p>
+        </div>
+        <span>1987</span>
+        <p class="followers">Followers</p>
+        <div class="today gain">
+          <img src="./images/icon-up.svg" alt="Followers gain arrow icon">
+          <span>12</span>
+          <p>Today</p>
+        </div>
+      </div>
+      <div class="big-card border-twitter">
+        <div class="social-media">
+          <img src="./images/icon-twitter.svg" alt="Twitter logo">
+          <p>@nathanf</p>
+        </div>
+        <span>1044</span>
+        <p class="followers">Followers</p>
+        <div class="today gain">
+          <img src="./images/icon-up.svg" alt="Followers gain arrow icon">
+          <span>99</span>
+          <p>Today</p>
+        </div>
+      </div>
+      <div class="big-card instagram">
+        <div class="social-media">
+          <img src="./images/icon-instagram.svg" alt="Instagram logo">
+          <p>@realnathanf</p>
+        </div>
+        <span>11k</span>
+        <p class="followers">Followers</p>
+        <div class="today gain">
+          <img src="./images/icon-up.svg" alt="Followers gain arrow icon">
+          <span>1099</span>
+          <p>Today</p>
+        </div>
+      </div>
+      <div class="big-card border-youtube">
+        <div class="social-media">
+          <img src="./images/icon-youtube.svg" alt="Youtube logo">
+          <p>Nathan F.</p>
+        </div>
+        <span>8239</span>
+        <p class="followers">Subscribers</p>
+        <div class="today decrease">
+          <img src="./images/icon-down.svg" alt="Followers decrease arrow icon">
+          <span>144</span>
+          <p>Today</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview">
+    <div class="container">
+      <h2 class="text-2xl font-bold text-gray-blue-600 mb-6 dark:text-white">Overview - <span class=" tracking-wider">Today</span></h2>
+      <div class="small-cards grid grid-cols-1 pb-8 gap-y-6 gap-x-[1.875rem] lg:p-0 md:grid-cols-2 lg:grid-cols-4">
+        <div class="card">
+          <div class="media">
+            <h3>Page Views</h3>
+            <img src="./images/icon-facebook.svg" alt="Facebook logo">
+          </div>
+          <div class="count">
+            <span class="count-val">87</span>
+            <div class="percent gain">
+              <img src="./images/icon-up.svg" alt="gain arrow icon">
+              <span>3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Likes</h3>
+            <img src="./images/icon-facebook.svg" alt="Facebook logo">
+          </div>
+          <div class="count">
+            <span class="count-val">52</span>
+            <div class="percent decrease">
+              <img src="./images/icon-down.svg" alt="gain arrow icon">
+              <span>2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Likes</h3>
+            <img src="./images/icon-instagram.svg" alt="Instagram logo">
+          </div>
+          <div class="count">
+            <span class="count-val">5462</span>
+            <div class="percent gain">
+              <img src="./images/icon-up.svg" alt="gain arrow icon">
+              <span>2257%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Profile Views</h3>
+            <img src="./images/icon-instagram.svg" alt="Instagram logo">
+          </div>
+          <div class="count">
+            <span class="count-val">52k</span>
+            <div class="percent gain">
+              <img src="./images/icon-up.svg" alt="gain arrow icon">
+              <span>1375%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Retweets</h3>
+            <img src="./images/icon-twitter.svg" alt="Twitter logo">
+          </div>
+          <div class="count">
+            <span class="count-val">117</span>
+            <div class="percent gain">
+              <img src="./images/icon-up.svg" alt="gain arrow icon">
+              <span>303%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Likes</h3>
+            <img src="./images/icon-twitter.svg" alt="Twitter logo">
+          </div>
+          <div class="count">
+            <span class="count-val">507</span>
+            <div class="percent gain">
+              <img src="./images/icon-up.svg" alt="gain arrow icon">
+              <span>553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Likes</h3>
+            <img src="./images/icon-youtube.svg" alt="Youtube logo">
+          </div>
+          <div class="count">
+            <span class="count-val">107</span>
+            <div class="percent decrease">
+              <img src="./images/icon-down.svg" alt="gain arrow icon">
+              <span>19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="media">
+            <h3>Total Views</h3>
+            <img src="./images/icon-youtube.svg" alt="Youtube logo">
+          </div>
+          <div class="count">
+            <span class="count-val">1407</span>
+            <div class="percent decrease">
+              <img src="./images/icon-down.svg" alt="gain arrow icon">
+              <span>12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/js/main.js"></script>
+</body>
+</html>
