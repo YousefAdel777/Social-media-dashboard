@@ -856,42 +856,6 @@ body{
   height: 1.125rem;
 }
 
-.min-h-\[100svh\]{
-  min-height: 100svh;
-}
-
-.min-h-\[0svh\]{
-  min-height: 0svh;
-}
-
-.min-h-\[800svh\]{
-  min-height: 800svh;
-}
-
-.min-h-\[80svh\]{
-  min-height: 80svh;
-}
-
-.min-h-\[80sv\]{
-  min-height: 80sv;
-}
-
-.min-h-\[80s\]{
-  min-height: 80s;
-}
-
-.min-h-\[80\]{
-  min-height: 80;
-}
-
-.min-h-\[800\]{
-  min-height: 800;
-}
-
-.min-h-\[800p\]{
-  min-height: 800p;
-}
-
 .min-h-\[800px\]{
   min-height: 800px;
 }
@@ -990,10 +954,6 @@ body{
 .bg-gray-blue-200{
   --tw-bg-opacity: 1;
   background-color: hsl(227 47% 96% / var(--tw-bg-opacity));
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .py-10{
